@@ -31,6 +31,8 @@ The **Incident Trend Analysis** project involves conducting statistical analysis
      - **Incident Type Distribution**: A pie chart showing the proportion of each incident type.
      - **Incident Priority Analysis**: Bar charts to visualize incident counts by priority.
      - **Resolution Time Analysis**: Scatter plot and line charts to showcase the correlation between incident priority and resolution time.
+       
+<img width="937" alt="Incident Trend Analysis" src="https://github.com/user-attachments/assets/a112c979-d94a-42ad-b6ac-e0519c9a530c" />
 
    **Tableau Dashboard**: [Incident_Trend_Analysis_Dashboard.twb](https://public.tableau.com/views/IncidentTrendAnalysisDashboard/IncidentTrendAnalysis?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop)
 
