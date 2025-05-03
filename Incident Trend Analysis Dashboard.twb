@@ -1,0 +1,2433 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard?rev=1.0' id='IncidentTrendAnalysisDashboard' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (clean_incident_data)' inline='true' name='federated.1yf3oak0j0zatq138weh50i20fkw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_incident_data' name='excel-direct.1nckrum0d4vid11cpdlns1qutcuv'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/LENOVO/Desktop/Project/Incident Trend Analysis Project/clean_incident_data.xlsx' interpretationMode='0' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1nckrum0d4vid11cpdlns1qutcuv' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H501:no:A1:H501:0' header='yes' outcome='6'>
+            <column datatype='string' name='Incident ID' ordinal='0' />
+            <column datatype='date' name='Date Reported' ordinal='1' />
+            <column datatype='string' name='Incident Type' ordinal='2' />
+            <column datatype='string' name='Priority' ordinal='3' />
+            <column datatype='string' name='Department' ordinal='4' />
+            <column datatype='string' name='Status' ordinal='5' />
+            <column datatype='integer' name='Resolution Time (days)' ordinal='6' />
+            <column datatype='string' name='Month' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H501:no:A1:H501:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Incident ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Incident ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Reported</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date Reported]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date Reported</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Incident Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Incident Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Priority</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Priority]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Priority</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resolution Time (days)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Resolution Time (days)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Resolution Time (days)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Resolved' datatype='real' default-format='p0.00%' name='[% Closed (copy)_1248341527589302272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Status] = &quot;Resolved&quot; THEN 1 END)/COUNT([Incident ID])' />
+      </column>
+      <column caption='% In Progress' datatype='real' default-format='p0.00%' name='[% Open (copy)_1248341527607386114]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Status] = &quot;In Progress&quot; THEN 1 END)/COUNT([Incident ID])' />
+      </column>
+      <column caption='% Open' datatype='real' default-format='p0.00%' name='[% Resolved (copy)_1248341527607193601]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Status] = &quot;Open&quot; THEN 1 END)/COUNT([Incident ID])' />
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]) / TOTAL(COUNT([__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Total Incidents' datatype='integer' name='[Calculation_1247215626303143936]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Incident ID])' />
+      </column>
+      <column caption='Average Resolution Time (days)' datatype='real' default-format='n#,##0;-#,##0' name='[Calculation_1247215626304241665]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Resolution Time (days)])/COUNT([Incident ID])' />
+      </column>
+      <column caption='% Closed' datatype='real' default-format='p0.00%' name='[Calculation_1247215626309378050]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Status] = &quot;Closed&quot; THEN 1 END)/COUNT([Incident ID])' />
+      </column>
+      <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' role='measure' type='quantitative' />
+      <column-instance column='[Incident Type]' derivation='None' name='[none:Incident Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Department,Incident Type)' hidden='true' name='[Action (Department,Incident Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Department]' />
+          <groupfilter function='level-members' level='[Incident Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Incident Type)' hidden='true' name='[Action (Incident Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Incident Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Status)' hidden='true' name='[Action (Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Date Reported))' hidden='true' name='[Action (YEAR(Date Reported))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tyr:Date Reported:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/LENOVO/Downloads/Incident Trend Analysis Dashboard.twb Files/Data/Extracts/federated_1yf3oak0j0zatq138weh50.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/29/2025 01:50:56 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Incident ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>500</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Reported</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Reported]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Reported</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>404</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Priority</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Priority]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Priority</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Resolution Time (days)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Resolution Time (days)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Resolution Time (days)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Closed&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Resolved&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Open&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;In Progress&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Incident Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Data Loss&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Software Bug&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Security Breach&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Network Issue&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;User Error&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hardware Failure&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_8E20C8884F86414FA8720E5524EFA6D1'>
+            <properties context=''>
+              <relation connection='excel-direct.1nckrum0d4vid11cpdlns1qutcuv' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H501:no:A1:H501:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Incident ID' ordinal='0' />
+                  <column datatype='date' name='Date Reported' ordinal='1' />
+                  <column datatype='string' name='Incident Type' ordinal='2' />
+                  <column datatype='string' name='Priority' ordinal='3' />
+                  <column datatype='string' name='Department' ordinal='4' />
+                  <column datatype='string' name='Status' ordinal='5' />
+                  <column datatype='integer' name='Resolution Time (days)' ordinal='6' />
+                  <column datatype='string' name='Month' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1yf3oak0j0zatq138weh50i20fkw'>
+      <datasources>
+        <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+        <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+        <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]' included-values='in-range-or-null'>
+        <min>#2022-04-24#</min>
+        <max>#2025-04-21#</max>
+      </filter>
+      <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]'>
+        <groupfilter function='level-members' level='[none:Priority:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Frequency Incidents' name='[Action1_967DCAE3F808440CAFC00F8559363C7D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Incident Trend Analysis' type='sheet' worksheet='Frequent Incident Types' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Frequent Incident Types' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Incident Trend Analysis' />
+      </command>
+    </action>
+    <action caption='Incident: Dept. &amp; Type' name='[Action4_6B42DDB805B941A6AD81868907443780]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Incident Trend Analysis' type='sheet' worksheet='Incidents by Department and Type' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Incident Trend Analysis' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Resolution Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Avg Resolution Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/AverageResolutionTime?rev=' id='AverageResolutionTime' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column caption='Average Resolution Time (days)' datatype='real' default-format='n#,##0;-#,##0' name='[Calculation_1247215626304241665]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Resolution Time (days)])/COUNT([Incident ID])' />
+            </column>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Resolution Time (days)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1247215626304241665]' derivation='User' name='[usr:Calculation_1247215626304241665:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action2_0F1EE13E851A4D07910937785AF07BAC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' data-class='total' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:Calculation_1247215626304241665:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:Calculation_1247215626304241665:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:Calculation_1247215626304241665:qk]</run>
+                <run bold='true' fontsize='12'>&gt; days</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FF8D6D06-215F-4382-AF8C-ACCDE154BDBA}' />
+    </worksheet>
+    <worksheet name='Frequent Incident Types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='10'>Frequent Incident Types</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/FrequentIncidentTypes?rev=' id='FrequentIncidentTypes' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Incident Type]' derivation='None' name='[none:Incident Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action2_0F1EE13E851A4D07910937785AF07BAC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' scope='rows' value='Count' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Incident Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>No. of Incidents:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]</rows>
+        <cols>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]</cols>
+      </table>
+      <simple-id uuid='{AADD3D5E-0409-491C-8401-6D60A0F6C2EC}' />
+    </worksheet>
+    <worksheet name='Incidents by Department and Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='10'>Incidents by Department and Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/IncidentsbyDepartmentandType?rev=' id='IncidentsbyDepartmentandType' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Incident Type]' derivation='None' name='[none:Incident Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action2_0F1EE13E851A4D07910937785AF07BAC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' scope='rows' value='Count' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Department:nk]' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Department:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Department:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Incident Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>No. of Incidents:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]</rows>
+        <cols>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Department:nk]</cols>
+      </table>
+      <simple-id uuid='{978564D4-6454-4938-8442-2A9DD485FE9A}' />
+    </worksheet>
+    <worksheet name='Monthly Incident Frequency'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/MonthlyIncidentFrequency?rev=' id='MonthlyIncidentFrequency' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Incident Type]' derivation='None' name='[none:Incident Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' num-steps='10' palette='orange_blue_diverging_10_0' reverse='true' symmetric='false' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' />
+              <color column='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' />
+              <text column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B01F6C08-D0F7-433A-952C-072B1EE1EA37}' />
+    </worksheet>
+    <worksheet name='Percentage Closed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Closed Incidents</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/PercentageClosed?rev=' id='PercentageClosed' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column caption='% Closed' datatype='real' default-format='p0.00%' name='[Calculation_1247215626309378050]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Status] = &quot;Closed&quot; THEN 1 END)/COUNT([Incident ID])' />
+            </column>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1247215626309378050]' derivation='User' name='[usr:Calculation_1247215626309378050:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action3_4B2D0F81008644B5AC3AD75CF60FCE4C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:Calculation_1247215626309378050:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:Calculation_1247215626309378050:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A4A0206E-A369-4471-95FF-E73B5CCE75C2}' />
+    </worksheet>
+    <worksheet name='Percentage In Progress'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Incidents In Progress</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/PercentageInProgress?rev=' id='PercentageInProgress' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column caption='% In Progress' datatype='real' default-format='p0.00%' name='[% Open (copy)_1248341527607386114]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Status] = &quot;In Progress&quot; THEN 1 END)/COUNT([Incident ID])' />
+            </column>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[% Open (copy)_1248341527607386114]' derivation='User' name='[usr:% Open (copy)_1248341527607386114:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action3_4B2D0F81008644B5AC3AD75CF60FCE4C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:% Open (copy)_1248341527607386114:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:% Open (copy)_1248341527607386114:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E0C25F8B-72B1-426A-9A5C-7113970E6991}' />
+    </worksheet>
+    <worksheet name='Percentage Open'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Open Incidents</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/PercentageOpen?rev=' id='PercentageOpen' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column caption='% Open' datatype='real' default-format='p0.00%' name='[% Resolved (copy)_1248341527607193601]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Status] = &quot;Open&quot; THEN 1 END)/COUNT([Incident ID])' />
+            </column>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[% Resolved (copy)_1248341527607193601]' derivation='User' name='[usr:% Resolved (copy)_1248341527607193601:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action3_4B2D0F81008644B5AC3AD75CF60FCE4C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:% Resolved (copy)_1248341527607193601:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:% Resolved (copy)_1248341527607193601:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6F6173E1-77FC-4374-8176-4C36A73C746F}' />
+    </worksheet>
+    <worksheet name='Priority Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='10'>Priority Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/PriorityDistribution?rev=' id='PriorityDistribution' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Resolution Time (days)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Resolution Time (days)]' derivation='Avg' name='[avg:Resolution Time (days):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Incident Type]' derivation='None' name='[none:Incident Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1yf3oak0j0zatq138weh50i20fkw].[avg:Resolution Time (days):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1yf3oak0j0zatq138weh50i20fkw].[avg:Resolution Time (days):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yf3oak0j0zatq138weh50i20fkw].[avg:Resolution Time (days):qk]</rows>
+        <cols>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</cols>
+      </table>
+      <simple-id uuid='{D060BACB-09C3-4668-A528-592B4A2DFBA2}' />
+    </worksheet>
+    <worksheet name='Resolution Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Resolved Incidents</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/ResolutionRate?rev=' id='ResolutionRate' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column caption='% Resolved' datatype='real' default-format='p0.00%' name='[% Closed (copy)_1248341527589302272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Status] = &quot;Resolved&quot; THEN 1 END)/COUNT([Incident ID])' />
+            </column>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[% Closed (copy)_1248341527589302272]' derivation='User' name='[usr:% Closed (copy)_1248341527589302272:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action3_4B2D0F81008644B5AC3AD75CF60FCE4C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:% Closed (copy)_1248341527589302272:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:% Closed (copy)_1248341527589302272:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{57159AB7-2756-4E15-8B1A-4C5609468582}' />
+    </worksheet>
+    <worksheet name='Total Incidents'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Total Incidents</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/TotalIncidents?rev=' id='TotalIncidents' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column caption='Total Incidents' datatype='integer' name='[Calculation_1247215626303143936]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Incident ID])' />
+            </column>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1247215626303143936]' derivation='User' name='[usr:Calculation_1247215626303143936:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action2_0F1EE13E851A4D07910937785AF07BAC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]'>
+            <groupfilter function='level-members' level='[tyr:Date Reported:ok]' user:ui-action-filter='[Action3_5F3A3F313B104F61B3907B60A38778FA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (YEAR(Date Reported))]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='136' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:Calculation_1247215626303143936:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1yf3oak0j0zatq138weh50i20fkw].[usr:Calculation_1247215626303143936:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DAAD75FB-278F-4CA8-B1BA-689DD6D6BFEA}' />
+    </worksheet>
+    <worksheet name='Trend of Incident Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='10'>Trend of Incident Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/TrendofIncidentOverTime?rev=' id='TrendofIncidentOverTime' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+            <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Incident Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_8E20C8884F86414FA8720E5524EFA6D1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Reported]' derivation='Year-Trunc' name='[tyr:Date Reported:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_6B42DDB805B941A6AD81868907443780]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Incident Type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]'>
+            <groupfilter function='level-members' level='[Incident Type]' user:ui-action-filter='[Action2_794E0C6409FE46A28FC894694685278C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action2_0F1EE13E851A4D07910937785AF07BAC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Status)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[Action (Department,Incident Type)]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</column>
+            <column>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' field-type='quantitative' max='222' min='-1' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[tyr:Date Reported:qk]' field-type='quantitative' max='#2025-09-14 19:03:48.738#' min='#2021-08-13 11:41:07.030#' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1yf3oak0j0zatq138weh50i20fkw].[tyr:Date Reported:qk]' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='rows' value='dashed' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Year of Date Reported:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yf3oak0j0zatq138weh50i20fkw].[tyr:Date Reported:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>No. of Incidents:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-markers-mode' value='auto' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]</rows>
+        <cols>[federated.1yf3oak0j0zatq138weh50i20fkw].[tyr:Date Reported:qk]</cols>
+      </table>
+      <simple-id uuid='{590C2893-17D9-471B-ACAB-14C4219C115F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Incident Trend Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='15'>INCIDENT TREND ANALYSIS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/IncidentTrendAnalysisDashboard/IncidentTrendAnalysis?rev=' id='IncidentTrendAnalysis' path='/workbooks/IncidentTrendAnalysisDashboard' revision='' />
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e6e6e6' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='left' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Sheet1 (clean_incident_data)' name='federated.1yf3oak0j0zatq138weh50i20fkw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1yf3oak0j0zatq138weh50i20fkw'>
+        <column datatype='date' name='[Date Reported]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Priority]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+        <column-instance column='[Date Reported]' derivation='None' name='[none:Date Reported:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Priority]' derivation='None' name='[none:Priority:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97856' id='65' param='horz' type-v2='layout-flow' w='99150' x='425' y='1072'>
+            <zone h='97856' id='53' param='vert' type-v2='layout-flow' w='99150' x='425' y='1072'>
+              <zone fixed-size='44' h='6970' id='54' is-fixed='true' type-v2='title' w='99150' x='425' y='1072'>
+                <zone-style>
+                  <format attr='border-color' value='#b2b2b2' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='4' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#c4c4c4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='65' h='8713' id='72' is-fixed='true' param='horz' type-v2='layout-flow' w='99150' x='425' y='8042'>
+                <zone h='8713' id='74' name='Trend of Incident Over Time' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='72104' x='425' y='8042'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='219' h='8713' id='76' is-fixed='true' mode='checkdropdown' name='Priority Distribution' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]' type-v2='filter' w='12062' x='72529' y='8042'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='274' h='8713' id='77' is-fixed='true' mode='checkdropdown' name='Priority Distribution' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' type-v2='filter' w='14984' x='84591' y='8042'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='82173' id='48' param='horz' type-v2='layout-flow' w='99150' x='425' y='16755'>
+                <zone h='82173' id='46' type-v2='layout-basic' w='99150' x='425' y='16755'>
+                  <zone h='82173' id='30' param='horz' type-v2='layout-flow' w='61012' x='38563' y='16755'>
+                    <zone h='82173' id='25' type-v2='layout-basic' w='61012' x='38563' y='16755'>
+                      <zone h='82173' id='19' param='horz' type-v2='layout-flow' w='14960' x='84615' y='16755'>
+                        <zone h='82173' id='13' type-v2='layout-basic' w='14960' x='84615' y='16755'>
+                          <zone h='82173' id='3' param='horz' type-v2='layout-flow' w='14960' x='84615' y='16755'>
+                            <zone fixed-size='229' h='82173' id='5' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='14960' x='84615' y='16755'>
+                              <zone fixed-size='101' h='13807' id='6' is-fixed='true' name='Total Incidents' w='14984' x='84591' y='16756'>
+                                <layout-cache type-h='fixed' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#c4c4c4' />
+                                  <format attr='border-style' value='solid' />
+                                  <format attr='border-width' value='4' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone fixed-size='199' h='13673' id='62' is-fixed='true' name='Resolution Rate' w='14984' x='84591' y='30563'>
+                                <layout-cache type-h='cell' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#c4c4c4' />
+                                  <format attr='border-style' value='solid' />
+                                  <format attr='border-width' value='4' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone fixed-size='178' h='13673' id='8' is-fixed='true' name='Percentage Closed' w='14984' x='84591' y='44236'>
+                                <layout-cache type-h='cell' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#c4c4c4' />
+                                  <format attr='border-style' value='solid' />
+                                  <format attr='border-width' value='4' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='13673' id='68' name='Percentage In Progress' w='14984' x='84591' y='57909'>
+                                <layout-cache fixed-size-h='76' type-h='fixed' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#b2b2b2' />
+                                  <format attr='border-style' value='solid' />
+                                  <format attr='border-width' value='4' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='13673' id='67' name='Percentage Open' w='14984' x='84591' y='71582'>
+                                <layout-cache fixed-size-h='76' type-h='fixed' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#b2b2b2' />
+                                  <format attr='border-style' value='solid' />
+                                  <format attr='border-width' value='4' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone fixed-size='161' h='13673' id='7' is-fixed='true' name='Average Resolution Time' w='14984' x='84591' y='85255'>
+                                <layout-cache type-h='cell' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#c4c4c4' />
+                                  <format attr='border-style' value='solid' />
+                                  <format attr='border-width' value='4' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                      <zone h='82173' id='20' param='vert' type-v2='layout-flow' w='46052' x='38563' y='16755'>
+                        <zone h='82173' id='22' param='vert' type-v2='layout-flow' w='46052' x='38563' y='16755'>
+                          <zone h='40952' id='23' name='Frequent Incident Types' w='46052' x='38563' y='16755'>
+                            <layout-cache cell-count-w='6' minheight='200' non-cell-size-w='78' type-h='scalable' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#c4c4c4' />
+                              <format attr='border-style' value='solid' />
+                              <format attr='border-width' value='4' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='41220' id='28' name='Incidents by Department and Type' w='46052' x='38563' y='57707'>
+                            <layout-cache minheight='202' type-h='scalable' type-w='fixed' />
+                            <zone-style>
+                              <format attr='border-color' value='#c4c4c4' />
+                              <format attr='border-style' value='solid' />
+                              <format attr='border-width' value='4' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='41080' id='73' name='Trend of Incident Over Time' w='38138' x='425' y='16755'>
+                    <zone-style>
+                      <format attr='border-color' value='#b2b2b2' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='4' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='41093' id='75' name='Priority Distribution' w='38138' x='425' y='57835'>
+                    <zone-style>
+                      <format attr='border-color' value='#b2b2b2' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='4' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='15'>INCIDENT TREND ANALYSIS</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='89' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97856' id='88' param='vert' type-v2='layout-flow' w='99150' x='425' y='1072'>
+                <zone fixed-size='44' h='6970' id='54' type-v2='title' w='99150' x='425' y='1072'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#c4c4c4' />
+                  </zone-style>
+                </zone>
+                <zone h='8713' id='74' name='Trend of Incident Over Time' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='72104' x='425' y='8042'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41080' id='73' is-fixed='true' name='Trend of Incident Over Time' w='38138' x='425' y='16755'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40952' id='23' is-fixed='true' name='Frequent Incident Types' w='46052' x='38563' y='16755'>
+                  <layout-cache cell-count-w='6' minheight='200' non-cell-size-w='78' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#c4c4c4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='95' h='13807' id='6' is-fixed='true' name='Total Incidents' w='14984' x='84591' y='16756'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#c4c4c4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='93' h='13673' id='62' is-fixed='true' name='Resolution Rate' w='14984' x='84591' y='30563'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#c4c4c4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='93' h='13673' id='8' is-fixed='true' name='Percentage Closed' w='14984' x='84591' y='44236'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#c4c4c4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41220' id='28' is-fixed='true' name='Incidents by Department and Type' w='46052' x='38563' y='57707'>
+                  <layout-cache minheight='202' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#c4c4c4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='219' h='8713' id='76' mode='checkdropdown' name='Priority Distribution' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]' type-v2='filter' w='12062' x='72529' y='8042'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='274' h='8713' id='77' mode='checkdropdown' name='Priority Distribution' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' type-v2='filter' w='14984' x='84591' y='8042'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41093' id='75' is-fixed='true' name='Priority Distribution' w='38138' x='425' y='57835'>
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='94' h='13673' id='68' is-fixed='true' name='Percentage In Progress' w='14984' x='84591' y='57909'>
+                  <layout-cache fixed-size-h='76' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='93' h='13673' id='67' is-fixed='true' name='Percentage Open' w='14984' x='84591' y='71582'>
+                  <layout-cache fixed-size-h='76' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#b2b2b2' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='93' h='13673' id='7' is-fixed='true' name='Average Resolution Time' w='14984' x='84591' y='85255'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#c4c4c4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D0104CA0-8E2D-4637-8B45-75780FE6AF8E}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' show-side-pane='false' source-height='44'>
+    <window class='worksheet' name='Frequent Incident Types'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{75567316-E6F1-4098-A926-7E6481D2A772}' />
+    </window>
+    <window class='worksheet' name='Monthly Incident Frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[__tableau_internal_object_id__].[cnt:Sheet1_8E20C8884F86414FA8720E5524EFA6D1:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{269764AE-8255-40E3-9917-7A7D473B2F54}' />
+    </window>
+    <window class='worksheet' name='Trend of Incident Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Date Reported:qk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Month:nk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[tyr:Date Reported:qk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[yr:Date Reported:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{09BFA5E8-5666-4B60-87AA-E8903EC20635}' />
+    </window>
+    <window class='worksheet' name='Incidents by Department and Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Department:nk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{738A4419-925C-4E59-9C4D-3C4BB61DF56F}' />
+    </window>
+    <window class='worksheet' name='Total Incidents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E2F5668A-A450-4DB2-BF91-D5FA4EA5E900}' />
+    </window>
+    <window class='worksheet' name='Average Resolution Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F241695A-2DE4-4D80-A364-B657D12E77C2}' />
+    </window>
+    <window class='worksheet' name='Percentage Closed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[md:Date Reported:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6C004488-E27D-4655-B9E9-F3B71D154AA7}' />
+    </window>
+    <window class='worksheet' name='Resolution Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[md:Date Reported:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{81709E48-7CA9-4CD7-9A54-713D88DCFFA8}' />
+    </window>
+    <window class='worksheet' name='Percentage Open'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[md:Date Reported:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0A03378E-0BAD-40D4-9034-E8000F4CAA1F}' />
+    </window>
+    <window class='worksheet' name='Percentage In Progress'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[md:Date Reported:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8420EDA1-0B82-4889-9F4B-FD7E00810763}' />
+    </window>
+    <window class='worksheet' name='Priority Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Priority:nk]</field>
+            <field>[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{82519B1A-1E9B-4265-B029-DF505B5D1757}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Incident Trend Analysis'>
+      <viewpoints>
+        <viewpoint name='Average Resolution Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Frequent Incident Types'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incidents by Department and Type'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1yf3oak0j0zatq138weh50i20fkw].[none:Incident Type:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Percentage Closed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Percentage In Progress'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Percentage Open'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Priority Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Resolution Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Incidents'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Trend of Incident Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0C59C37C-B09B-432F-AF08-55A98689B025}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Incident Trend Analysis' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

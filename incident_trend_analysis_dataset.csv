@@ -1,0 +1,501 @@
+Incident ID,Date Reported,Incident Type,Priority,Department,Status,Resolution Time (days)
+INC0001,2023-11-24,Hardware Failure,Low,Sales,Closed,11
+INC0002,2024-03-22,Security Breach,High,Operations,In Progress,10
+INC0003,2022-07-23,Security Breach,Low,Sales,Resolved,19
+INC0004,2025-03-02,Data Loss,High,Operations,Resolved,15
+INC0005,2022-04-26,Hardware Failure,High,IT,In Progress,18
+INC0006,2024-08-16,Security Breach,Medium,Customer Service,Resolved,16
+INC0007,2022-08-02,Hardware Failure,Critical,HR,Closed,16
+INC0008,2023-05-17,Data Loss,Medium,IT,Open,25
+INC0009,2023-10-29,User Error,High,Operations,Closed,19
+INC0010,2023-08-08,Security Breach,Medium,HR,Open,12
+INC0011,2022-05-02,Network Issue,Critical,IT,In Progress,14
+INC0012,2023-09-10,User Error,Low,Finance,Closed,3
+INC0013,2023-12-20,Data Loss,Low,HR,Open,8
+INC0014,2023-07-28,Security Breach,High,HR,Open,14
+INC0015,2023-02-16,Security Breach,Critical,Operations,Open,26
+INC0016,2024-11-04,Security Breach,Medium,Sales,Closed,16
+INC0017,2024-07-03,Software Bug,High,IT,Open,5
+INC0018,2022-08-21,Software Bug,Critical,Finance,Closed,17
+INC0019,2024-04-05,Network Issue,High,Sales,Resolved,14
+INC0020,2023-06-03,Data Loss,Critical,IT,Open,12
+INC0021,2023-10-31,Data Loss,Critical,Sales,Resolved,15
+INC0022,2023-08-22,Security Breach,Medium,IT,Resolved,1
+INC0023,2025-04-04,Hardware Failure,High,Sales,Closed,11
+INC0024,2023-02-18,Hardware Failure,Medium,Finance,In Progress,4
+INC0025,2024-09-11,Hardware Failure,High,Customer Service,Open,23
+INC0026,2025-01-17,Network Issue,Low,IT,Open,9
+INC0027,2022-10-12,Security Breach,High,Finance,In Progress,28
+INC0028,2024-06-09,Security Breach,Medium,Operations,Closed,27
+INC0029,2022-08-27,Data Loss,Medium,IT,Open,17
+INC0030,2023-06-26,Hardware Failure,Critical,Sales,Resolved,10
+INC0031,2024-12-01,Hardware Failure,Medium,IT,Resolved,29
+INC0032,2025-01-11,Data Loss,Low,Operations,In Progress,30
+INC0033,2024-03-01,Hardware Failure,Medium,Sales,Resolved,3
+INC0034,2023-03-26,Software Bug,Low,Finance,Resolved,9
+INC0035,2023-02-04,Security Breach,Medium,Customer Service,Open,27
+INC0036,2025-01-02,Software Bug,Medium,Operations,Resolved,13
+INC0037,2025-02-03,Security Breach,Low,Operations,In Progress,6
+INC0038,2024-10-07,Data Loss,Low,HR,Open,14
+INC0039,2023-04-10,User Error,High,HR,Open,28
+INC0040,2023-05-15,Security Breach,Medium,IT,In Progress,4
+INC0041,2022-05-20,Network Issue,Medium,HR,Resolved,15
+INC0042,2024-09-20,Security Breach,Medium,Sales,Open,26
+INC0043,2023-10-04,Software Bug,Low,IT,Resolved,1
+INC0044,2024-11-25,Software Bug,High,Operations,Resolved,14
+INC0045,2022-07-31,Network Issue,Critical,IT,Resolved,5
+INC0046,2022-05-29,Hardware Failure,High,Customer Service,In Progress,22
+INC0047,2023-10-18,Network Issue,High,HR,Closed,22
+INC0048,2022-05-27,Data Loss,Low,Finance,Open,6
+INC0049,2022-09-10,Security Breach,Medium,Finance,Closed,11
+INC0050,2022-10-06,Software Bug,High,Customer Service,Closed,26
+INC0051,2024-02-24,Software Bug,Critical,HR,Closed,1
+INC0052,2024-12-04,Hardware Failure,High,Finance,Closed,12
+INC0053,2022-05-19,User Error,Low,Finance,Resolved,26
+INC0054,2024-03-12,Software Bug,Medium,HR,In Progress,15
+INC0055,2022-09-20,Security Breach,Medium,Sales,Closed,17
+INC0056,2022-06-07,Data Loss,Critical,Customer Service,Open,27
+INC0057,2024-10-24,Network Issue,Medium,Sales,Open,25
+INC0058,2022-07-29,Hardware Failure,Medium,Finance,In Progress,24
+INC0059,2022-07-20,Security Breach,High,Operations,In Progress,22
+INC0060,2022-05-27,Network Issue,Critical,Finance,Closed,14
+INC0061,2024-11-10,User Error,High,Sales,Closed,3
+INC0062,2024-04-16,Security Breach,High,Sales,Resolved,10
+INC0063,2023-11-22,Software Bug,Medium,HR,In Progress,26
+INC0064,2022-05-23,Software Bug,Medium,Customer Service,In Progress,2
+INC0065,2023-08-22,Data Loss,Critical,Sales,In Progress,12
+INC0066,2023-10-31,User Error,High,Finance,In Progress,14
+INC0067,2022-08-26,Software Bug,Critical,Operations,Closed,2
+INC0068,2023-08-11,Security Breach,Low,Sales,Resolved,22
+INC0069,2022-07-23,Software Bug,Critical,Customer Service,Resolved,11
+INC0070,2024-11-05,Software Bug,High,Customer Service,Resolved,5
+INC0071,2024-11-30,Software Bug,Medium,Operations,Open,18
+INC0072,2023-05-02,Network Issue,High,HR,Resolved,7
+INC0073,2025-02-14,Network Issue,Critical,Customer Service,Open,16
+INC0074,2023-01-31,Software Bug,Low,Operations,In Progress,9
+INC0075,2022-10-01,Security Breach,High,Finance,Closed,23
+INC0076,2022-05-05,Network Issue,Low,Sales,Closed,22
+INC0077,2024-08-03,Security Breach,Critical,Operations,In Progress,22
+INC0078,2024-07-15,Software Bug,Low,Customer Service,In Progress,4
+INC0079,2022-09-02,User Error,Medium,Operations,In Progress,2
+INC0080,2023-09-10,Security Breach,Medium,Sales,In Progress,26
+INC0081,2025-01-30,Security Breach,Critical,Customer Service,In Progress,8
+INC0082,2024-11-17,Security Breach,Low,IT,In Progress,24
+INC0083,2024-12-18,Network Issue,Low,HR,Closed,1
+INC0084,2025-01-25,Network Issue,Medium,IT,Open,20
+INC0085,2024-03-10,Security Breach,High,HR,Open,1
+INC0086,2024-12-01,Hardware Failure,Low,Customer Service,In Progress,2
+INC0087,2023-11-06,Network Issue,Medium,Operations,Closed,3
+INC0088,2022-10-19,Software Bug,Critical,Finance,In Progress,29
+INC0089,2022-10-01,Software Bug,High,HR,Open,11
+INC0090,2022-07-21,User Error,High,HR,Closed,19
+INC0091,2022-11-09,Network Issue,Low,IT,Open,18
+INC0092,2024-12-20,Network Issue,Critical,HR,Resolved,20
+INC0093,2024-01-13,Network Issue,Medium,IT,Closed,30
+INC0094,2024-07-16,Hardware Failure,Medium,Customer Service,In Progress,8
+INC0095,2025-03-04,Hardware Failure,Medium,Operations,In Progress,28
+INC0096,2025-03-13,Hardware Failure,Critical,Finance,Resolved,17
+INC0097,2024-07-11,Network Issue,High,Sales,Resolved,25
+INC0098,2025-01-30,Data Loss,Medium,HR,Closed,23
+INC0099,2022-07-27,Software Bug,High,Customer Service,In Progress,7
+INC0100,2023-11-07,Network Issue,Critical,Finance,Closed,21
+INC0101,2022-08-10,Hardware Failure,Low,HR,In Progress,23
+INC0102,2022-06-11,Software Bug,High,IT,Open,19
+INC0103,2022-11-17,Data Loss,Medium,Sales,In Progress,19
+INC0104,2023-01-23,Software Bug,High,Customer Service,Open,13
+INC0105,2023-02-11,Security Breach,High,Finance,Closed,8
+INC0106,2022-11-04,Network Issue,Medium,Sales,Closed,20
+INC0107,2022-11-11,Network Issue,Low,IT,In Progress,14
+INC0108,2025-03-19,Security Breach,Critical,IT,In Progress,17
+INC0109,2024-10-09,Hardware Failure,Medium,IT,Resolved,7
+INC0110,2022-12-30,Data Loss,Critical,Customer Service,Closed,7
+INC0111,2022-07-27,Security Breach,Medium,Finance,Closed,3
+INC0112,2024-09-25,Software Bug,Low,Sales,In Progress,21
+INC0113,2023-04-06,Security Breach,High,HR,In Progress,27
+INC0114,2024-06-11,Security Breach,Medium,HR,Closed,25
+INC0115,2024-02-02,Data Loss,Low,IT,Open,3
+INC0116,2023-03-18,Security Breach,Critical,HR,In Progress,1
+INC0117,2023-10-20,User Error,Critical,Sales,Open,23
+INC0118,2025-01-17,Network Issue,High,Finance,Open,9
+INC0119,2022-07-21,Network Issue,Critical,Finance,In Progress,28
+INC0120,2023-04-28,Security Breach,Critical,HR,In Progress,3
+INC0121,2023-04-18,Data Loss,Medium,Customer Service,Closed,6
+INC0122,2025-01-07,User Error,Critical,Finance,Open,9
+INC0123,2022-05-18,Software Bug,Medium,IT,Closed,28
+INC0124,2024-11-28,User Error,Medium,Customer Service,Open,5
+INC0125,2022-06-20,Network Issue,Critical,IT,Resolved,29
+INC0126,2024-03-23,Network Issue,Critical,Sales,Resolved,27
+INC0127,2024-05-28,Security Breach,Medium,Sales,In Progress,1
+INC0128,2025-02-27,User Error,Medium,IT,Closed,16
+INC0129,2025-01-12,Hardware Failure,Low,Finance,Closed,12
+INC0130,2024-09-03,Data Loss,Critical,Customer Service,In Progress,1
+INC0131,2024-04-22,User Error,Critical,Customer Service,Resolved,8
+INC0132,2022-09-05,Hardware Failure,Critical,HR,Closed,27
+INC0133,2023-08-27,User Error,High,Operations,In Progress,4
+INC0134,2023-04-13,Data Loss,Medium,HR,In Progress,14
+INC0135,2022-11-19,Data Loss,Medium,Customer Service,In Progress,26
+INC0136,2023-12-27,Hardware Failure,High,HR,Closed,12
+INC0137,2023-08-14,User Error,High,HR,Closed,14
+INC0138,2022-07-30,User Error,Low,HR,Open,5
+INC0139,2022-06-24,Software Bug,Low,Customer Service,Resolved,20
+INC0140,2023-04-20,Hardware Failure,Medium,Sales,Closed,17
+INC0141,2022-07-10,Hardware Failure,Critical,Operations,Resolved,24
+INC0142,2024-07-21,Hardware Failure,Low,Finance,In Progress,26
+INC0143,2024-01-19,Data Loss,High,Finance,Open,28
+INC0144,2022-06-29,Hardware Failure,Critical,HR,Resolved,5
+INC0145,2024-08-13,Security Breach,Medium,Customer Service,Closed,9
+INC0146,2024-03-12,Network Issue,Critical,IT,In Progress,21
+INC0147,2022-07-27,Security Breach,Critical,Operations,In Progress,21
+INC0148,2022-05-20,User Error,Medium,Customer Service,Open,6
+INC0149,2025-02-11,Software Bug,Critical,Sales,Resolved,23
+INC0150,2022-07-05,Security Breach,Critical,Finance,Resolved,23
+INC0151,2024-05-19,Network Issue,Critical,Sales,Resolved,4
+INC0152,2022-09-05,Hardware Failure,Critical,Operations,In Progress,16
+INC0153,2023-09-06,Security Breach,Low,Customer Service,In Progress,18
+INC0154,2023-04-11,User Error,High,Operations,In Progress,14
+INC0155,2023-01-16,Hardware Failure,Medium,Sales,Open,26
+INC0156,2024-08-19,Network Issue,Medium,Operations,Closed,14
+INC0157,2025-04-21,Data Loss,Critical,Finance,Open,3
+INC0158,2022-05-24,Network Issue,High,Customer Service,Closed,23
+INC0159,2022-07-23,Security Breach,Critical,Customer Service,Closed,1
+INC0160,2023-09-21,User Error,Critical,Operations,In Progress,8
+INC0161,2022-09-04,Software Bug,High,Operations,In Progress,8
+INC0162,2024-10-16,Data Loss,Medium,Finance,Closed,22
+INC0163,2023-11-14,Network Issue,High,Customer Service,Open,1
+INC0164,2022-09-17,Data Loss,Low,Operations,Open,7
+INC0165,2025-01-02,Software Bug,Medium,Sales,Open,22
+INC0166,2022-05-23,Security Breach,Low,Operations,Resolved,30
+INC0167,2025-02-18,Security Breach,Low,HR,Open,30
+INC0168,2023-08-28,Security Breach,High,HR,Open,1
+INC0169,2022-06-30,Network Issue,Low,Finance,Closed,19
+INC0170,2024-06-18,Network Issue,Medium,Operations,Open,25
+INC0171,2024-09-12,Hardware Failure,Medium,Operations,Open,16
+INC0172,2024-06-29,Security Breach,Medium,Customer Service,In Progress,30
+INC0173,2024-04-12,Hardware Failure,High,Sales,Open,26
+INC0174,2025-02-10,Network Issue,High,Customer Service,Open,1
+INC0175,2022-09-23,Hardware Failure,Critical,Sales,Closed,24
+INC0176,2024-11-24,Hardware Failure,High,Sales,In Progress,8
+INC0177,2025-04-14,Security Breach,High,IT,Resolved,27
+INC0178,2022-07-04,Security Breach,Critical,Customer Service,Open,11
+INC0179,2025-03-19,Software Bug,Low,Sales,Closed,21
+INC0180,2022-07-14,Hardware Failure,High,Customer Service,In Progress,7
+INC0181,2022-10-05,Software Bug,Low,Customer Service,Closed,16
+INC0182,2022-12-26,Security Breach,Low,Sales,In Progress,28
+INC0183,2023-04-25,Software Bug,Low,Operations,In Progress,7
+INC0184,2024-11-16,Software Bug,Critical,HR,In Progress,15
+INC0185,2024-01-21,User Error,High,IT,Closed,20
+INC0186,2024-07-21,Network Issue,High,Finance,Closed,27
+INC0187,2024-11-20,Network Issue,Low,Finance,Closed,18
+INC0188,2022-10-19,Network Issue,Medium,Sales,Closed,14
+INC0189,2025-02-04,Security Breach,Critical,Sales,In Progress,12
+INC0190,2024-07-02,User Error,Medium,Sales,In Progress,14
+INC0191,2024-01-01,Security Breach,Low,HR,In Progress,29
+INC0192,2024-02-11,Hardware Failure,Low,Sales,In Progress,29
+INC0193,2025-03-08,Software Bug,Medium,Operations,Closed,6
+INC0194,2022-09-02,Data Loss,Low,Finance,Open,3
+INC0195,2024-10-09,Data Loss,Low,Operations,Open,27
+INC0196,2022-12-01,Network Issue,Critical,Operations,In Progress,2
+INC0197,2022-11-01,Network Issue,Low,Sales,In Progress,13
+INC0198,2023-02-22,Network Issue,High,HR,In Progress,24
+INC0199,2023-11-24,Security Breach,High,HR,Open,30
+INC0200,2022-05-28,Hardware Failure,Medium,HR,Open,8
+INC0201,2023-04-29,Software Bug,Critical,Customer Service,Open,27
+INC0202,2025-03-20,Security Breach,Low,Sales,Resolved,20
+INC0203,2024-04-04,Security Breach,Critical,Operations,Resolved,29
+INC0204,2025-04-15,Data Loss,Low,Finance,Open,11
+INC0205,2024-10-09,User Error,High,Customer Service,Open,30
+INC0206,2024-12-23,Security Breach,High,HR,Open,17
+INC0207,2024-01-12,Hardware Failure,High,HR,In Progress,23
+INC0208,2022-12-07,User Error,High,Finance,Closed,21
+INC0209,2024-01-19,User Error,High,Operations,Resolved,11
+INC0210,2024-10-25,Security Breach,Low,Sales,Resolved,8
+INC0211,2024-12-15,Hardware Failure,Critical,IT,Open,25
+INC0212,2022-12-15,Security Breach,Critical,IT,In Progress,7
+INC0213,2024-07-06,Hardware Failure,Low,Operations,In Progress,20
+INC0214,2022-07-16,Network Issue,High,Sales,In Progress,29
+INC0215,2023-03-19,Hardware Failure,Critical,Finance,Closed,10
+INC0216,2024-04-04,Data Loss,Medium,Finance,Closed,1
+INC0217,2023-04-12,Hardware Failure,Medium,Sales,Closed,29
+INC0218,2023-04-09,Data Loss,High,HR,Closed,2
+INC0219,2022-11-03,User Error,Low,Sales,Open,30
+INC0220,2024-08-26,Data Loss,Medium,Customer Service,Open,27
+INC0221,2023-03-01,User Error,Low,Sales,Closed,30
+INC0222,2024-01-20,Software Bug,High,IT,Open,10
+INC0223,2023-06-10,Network Issue,High,IT,Open,7
+INC0224,2024-10-10,Hardware Failure,Low,IT,Resolved,8
+INC0225,2024-04-09,Software Bug,Critical,Customer Service,Open,4
+INC0226,2023-01-18,Network Issue,High,Finance,Closed,10
+INC0227,2023-03-04,User Error,Low,Customer Service,Resolved,27
+INC0228,2024-04-23,Hardware Failure,Low,Sales,Open,6
+INC0229,2024-08-08,Hardware Failure,Critical,Operations,Closed,11
+INC0230,2024-07-12,Software Bug,Medium,Sales,Open,29
+INC0231,2024-11-20,Software Bug,Low,HR,Open,9
+INC0232,2024-06-16,User Error,Medium,IT,Closed,16
+INC0233,2023-11-24,Network Issue,Medium,IT,Resolved,12
+INC0234,2023-09-18,Software Bug,Medium,Operations,Resolved,17
+INC0235,2025-01-04,Network Issue,Low,Customer Service,Open,15
+INC0236,2024-02-17,Software Bug,Low,IT,Open,22
+INC0237,2025-01-22,Security Breach,Medium,Finance,Open,10
+INC0238,2024-10-27,User Error,High,Sales,Resolved,26
+INC0239,2023-11-21,Software Bug,High,IT,In Progress,16
+INC0240,2023-04-10,Security Breach,Medium,Customer Service,Resolved,7
+INC0241,2025-03-29,Hardware Failure,Low,Customer Service,In Progress,16
+INC0242,2022-09-13,Software Bug,Medium,Finance,Open,24
+INC0243,2024-05-01,Security Breach,High,Sales,In Progress,27
+INC0244,2023-05-23,User Error,Medium,Operations,Closed,13
+INC0245,2023-11-18,Network Issue,Medium,Operations,In Progress,1
+INC0246,2025-01-19,Data Loss,Low,Sales,Resolved,22
+INC0247,2024-10-03,Software Bug,Medium,Operations,Open,5
+INC0248,2023-08-27,Network Issue,Medium,Sales,Open,17
+INC0249,2024-04-02,Software Bug,Low,Finance,Resolved,9
+INC0250,2024-01-19,Hardware Failure,Critical,Operations,Closed,16
+INC0251,2022-11-22,User Error,High,Finance,Resolved,17
+INC0252,2024-01-16,Hardware Failure,Critical,Operations,Resolved,27
+INC0253,2022-11-15,Data Loss,High,Customer Service,In Progress,13
+INC0254,2024-04-07,Hardware Failure,High,Finance,In Progress,7
+INC0255,2025-03-07,Hardware Failure,Medium,Operations,Closed,17
+INC0256,2025-01-16,Hardware Failure,High,HR,Resolved,18
+INC0257,2023-08-12,Software Bug,Low,Sales,Resolved,19
+INC0258,2024-03-30,Security Breach,Low,HR,Open,7
+INC0259,2024-05-03,Hardware Failure,Low,Finance,Resolved,28
+INC0260,2023-09-17,Data Loss,Critical,Operations,Resolved,18
+INC0261,2023-05-08,User Error,Critical,HR,Open,9
+INC0262,2024-02-13,User Error,High,Customer Service,Open,12
+INC0263,2024-03-31,Software Bug,Medium,Customer Service,Open,2
+INC0264,2024-01-26,Data Loss,Medium,Sales,In Progress,20
+INC0265,2024-06-30,Data Loss,Critical,HR,In Progress,8
+INC0266,2024-11-05,User Error,Low,Sales,Resolved,29
+INC0267,2025-02-25,User Error,High,HR,Open,13
+INC0268,2023-08-14,Network Issue,Medium,Finance,Closed,17
+INC0269,2022-09-22,Software Bug,Low,Sales,Closed,13
+INC0270,2022-08-11,Hardware Failure,Medium,Finance,Resolved,28
+INC0271,2024-09-28,Software Bug,Low,Finance,Open,23
+INC0272,2024-08-11,Software Bug,Low,HR,Resolved,20
+INC0273,2022-05-08,User Error,High,Sales,Resolved,25
+INC0274,2025-02-16,Security Breach,Medium,Operations,Resolved,6
+INC0275,2022-09-10,User Error,Medium,Finance,In Progress,9
+INC0276,2023-09-17,Data Loss,Medium,Finance,Closed,30
+INC0277,2022-08-17,Software Bug,Critical,Operations,Closed,12
+INC0278,2022-08-04,User Error,Medium,Sales,In Progress,22
+INC0279,2024-03-06,Security Breach,Low,Customer Service,Open,17
+INC0280,2022-10-08,Software Bug,High,Customer Service,Open,6
+INC0281,2022-11-25,Hardware Failure,High,Sales,Open,9
+INC0282,2024-10-22,Network Issue,Critical,IT,In Progress,21
+INC0283,2023-12-19,Software Bug,Critical,Sales,In Progress,11
+INC0284,2023-05-11,Software Bug,High,Sales,Resolved,8
+INC0285,2023-08-15,Hardware Failure,Low,Finance,Resolved,14
+INC0286,2022-11-19,Data Loss,Medium,IT,In Progress,18
+INC0287,2023-01-17,Network Issue,Critical,IT,Closed,24
+INC0288,2023-10-30,Data Loss,Medium,Finance,Resolved,5
+INC0289,2024-09-27,User Error,Critical,Finance,In Progress,2
+INC0290,2024-06-07,Software Bug,Low,HR,In Progress,23
+INC0291,2024-09-14,Data Loss,Medium,HR,In Progress,19
+INC0292,2024-12-10,Hardware Failure,Critical,HR,Resolved,21
+INC0293,2023-07-21,Security Breach,Critical,HR,Resolved,17
+INC0294,2024-04-30,Security Breach,High,Finance,Open,7
+INC0295,2023-05-08,Security Breach,Critical,HR,In Progress,10
+INC0296,2024-11-07,Software Bug,Medium,HR,Open,3
+INC0297,2022-12-17,Software Bug,Low,Customer Service,Open,15
+INC0298,2025-02-22,Software Bug,Low,Customer Service,Open,13
+INC0299,2023-06-29,Network Issue,Medium,Customer Service,Closed,3
+INC0300,2024-02-26,Hardware Failure,High,Operations,In Progress,30
+INC0301,2024-04-07,Data Loss,High,IT,In Progress,18
+INC0302,2023-09-10,Security Breach,High,Customer Service,Closed,3
+INC0303,2024-10-09,User Error,High,IT,Open,27
+INC0304,2024-10-26,Data Loss,Low,Finance,Closed,11
+INC0305,2024-11-19,User Error,Critical,IT,In Progress,17
+INC0306,2022-12-25,User Error,Critical,HR,Resolved,7
+INC0307,2025-01-26,Security Breach,Low,HR,Open,17
+INC0308,2024-03-07,Hardware Failure,Low,Customer Service,Closed,5
+INC0309,2023-12-07,User Error,Low,Sales,Resolved,21
+INC0310,2024-09-25,Security Breach,Low,IT,Resolved,12
+INC0311,2023-10-20,Security Breach,Critical,Operations,Open,28
+INC0312,2022-05-08,Security Breach,High,Operations,Resolved,15
+INC0313,2024-02-24,Network Issue,Medium,Customer Service,In Progress,24
+INC0314,2025-02-02,Software Bug,High,HR,Open,11
+INC0315,2025-01-06,Software Bug,Critical,Finance,In Progress,7
+INC0316,2022-05-28,Software Bug,Medium,Customer Service,In Progress,4
+INC0317,2024-07-24,Software Bug,High,Sales,Resolved,9
+INC0318,2023-04-16,Software Bug,Low,Finance,Resolved,27
+INC0319,2023-02-21,Security Breach,High,HR,Resolved,20
+INC0320,2024-06-27,User Error,Critical,IT,Resolved,30
+INC0321,2025-03-18,Network Issue,Low,HR,Closed,26
+INC0322,2023-09-27,Data Loss,Critical,Sales,Closed,12
+INC0323,2024-09-20,Data Loss,Medium,Sales,Closed,3
+INC0324,2025-03-01,Network Issue,Medium,Sales,Open,12
+INC0325,2023-06-03,Security Breach,Low,IT,Resolved,28
+INC0326,2023-05-29,Security Breach,Critical,Operations,Open,28
+INC0327,2022-04-30,Data Loss,Low,Operations,Open,16
+INC0328,2023-10-04,Data Loss,High,Sales,In Progress,5
+INC0329,2024-05-08,Hardware Failure,High,Finance,Resolved,27
+INC0330,2022-11-06,Software Bug,Low,IT,In Progress,26
+INC0331,2024-08-15,Security Breach,High,Finance,In Progress,9
+INC0332,2025-04-11,Data Loss,High,HR,In Progress,16
+INC0333,2022-10-13,User Error,Medium,Customer Service,Closed,6
+INC0334,2025-03-10,Hardware Failure,Medium,IT,Open,15
+INC0335,2024-10-01,Data Loss,Critical,Customer Service,Closed,22
+INC0336,2022-10-14,Hardware Failure,Critical,Finance,Closed,18
+INC0337,2022-12-10,Network Issue,High,Sales,In Progress,10
+INC0338,2024-09-03,Security Breach,High,Customer Service,Open,1
+INC0339,2024-09-22,User Error,High,IT,Open,17
+INC0340,2025-01-09,Software Bug,Critical,Finance,Closed,2
+INC0341,2022-05-17,User Error,Critical,Finance,Open,19
+INC0342,2022-12-16,Network Issue,High,IT,Open,10
+INC0343,2023-01-17,Security Breach,Low,Finance,In Progress,8
+INC0344,2022-04-24,Software Bug,High,Finance,Resolved,9
+INC0345,2023-03-15,Network Issue,Low,IT,In Progress,27
+INC0346,2024-08-21,Security Breach,High,HR,Open,17
+INC0347,2022-08-24,Hardware Failure,High,Customer Service,Closed,3
+INC0348,2024-07-20,Security Breach,High,Customer Service,Resolved,6
+INC0349,2025-01-12,Hardware Failure,Medium,Customer Service,Closed,29
+INC0350,2023-04-30,Security Breach,Critical,HR,In Progress,22
+INC0351,2022-08-08,Security Breach,High,Customer Service,Resolved,24
+INC0352,2022-11-12,User Error,Medium,Sales,Open,9
+INC0353,2022-04-29,Security Breach,Medium,Sales,Closed,2
+INC0354,2022-11-16,User Error,Medium,Finance,Resolved,25
+INC0355,2024-06-06,Data Loss,Low,Sales,Closed,18
+INC0356,2023-01-07,Hardware Failure,Medium,IT,In Progress,25
+INC0357,2023-05-19,Security Breach,Critical,HR,Closed,18
+INC0358,2023-05-02,Hardware Failure,Critical,HR,Closed,9
+INC0359,2023-08-16,Hardware Failure,High,HR,Resolved,9
+INC0360,2023-07-21,Software Bug,Low,HR,Resolved,17
+INC0361,2024-12-08,User Error,Low,Operations,In Progress,17
+INC0362,2025-01-13,Security Breach,Medium,Sales,Closed,2
+INC0363,2022-05-12,Data Loss,Low,Sales,In Progress,26
+INC0364,2024-10-13,Data Loss,High,HR,In Progress,6
+INC0365,2024-11-01,Network Issue,Medium,Operations,Closed,22
+INC0366,2023-02-01,Hardware Failure,High,Operations,In Progress,18
+INC0367,2024-02-22,Software Bug,Critical,IT,Open,13
+INC0368,2022-05-24,Hardware Failure,High,IT,In Progress,29
+INC0369,2022-11-14,Hardware Failure,Medium,Operations,Resolved,25
+INC0370,2023-09-19,Software Bug,Critical,HR,Resolved,23
+INC0371,2022-05-18,Network Issue,Medium,Sales,In Progress,10
+INC0372,2025-02-06,Network Issue,Low,HR,Resolved,3
+INC0373,2024-04-16,Data Loss,Low,Sales,Open,4
+INC0374,2023-07-18,Hardware Failure,Medium,Sales,Resolved,15
+INC0375,2023-12-09,User Error,Medium,Finance,Open,13
+INC0376,2022-07-07,Network Issue,Medium,HR,Resolved,15
+INC0377,2022-10-08,User Error,Medium,HR,Resolved,11
+INC0378,2023-10-08,Software Bug,Medium,IT,Resolved,9
+INC0379,2025-04-04,Software Bug,Critical,Customer Service,Open,1
+INC0380,2022-07-29,Software Bug,Medium,HR,In Progress,22
+INC0381,2023-12-16,User Error,Critical,HR,Closed,17
+INC0382,2024-09-24,Software Bug,Low,Operations,Open,9
+INC0383,2022-08-31,Software Bug,Critical,Finance,Closed,26
+INC0384,2023-10-17,Software Bug,High,HR,Resolved,11
+INC0385,2022-11-08,Software Bug,Low,Operations,Resolved,15
+INC0386,2024-01-12,Hardware Failure,Low,Finance,In Progress,2
+INC0387,2024-08-07,Data Loss,High,IT,Closed,1
+INC0388,2024-11-19,Data Loss,Medium,HR,Closed,14
+INC0389,2022-07-17,Software Bug,High,Operations,Closed,19
+INC0390,2023-03-22,Data Loss,High,Customer Service,Resolved,29
+INC0391,2023-09-19,Network Issue,Low,Sales,Resolved,1
+INC0392,2023-02-23,User Error,Medium,Customer Service,Resolved,23
+INC0393,2025-03-24,Hardware Failure,Medium,Customer Service,In Progress,11
+INC0394,2025-02-10,Network Issue,High,Customer Service,Resolved,28
+INC0395,2022-05-27,Network Issue,Low,Finance,Open,25
+INC0396,2024-10-02,Hardware Failure,High,Operations,Resolved,7
+INC0397,2023-03-23,Data Loss,Medium,Sales,Resolved,29
+INC0398,2024-01-28,Hardware Failure,Critical,HR,Open,28
+INC0399,2023-08-29,User Error,Medium,Sales,Open,30
+INC0400,2024-01-01,User Error,Low,IT,In Progress,4
+INC0401,2024-12-17,User Error,Low,IT,Closed,18
+INC0402,2022-05-04,Hardware Failure,Critical,Customer Service,In Progress,26
+INC0403,2024-04-27,Security Breach,High,Operations,In Progress,14
+INC0404,2022-05-20,Software Bug,Low,HR,Open,19
+INC0405,2023-11-02,Security Breach,Low,Finance,Open,21
+INC0406,2024-06-10,User Error,Critical,HR,Closed,12
+INC0407,2023-10-21,Network Issue,Critical,IT,Closed,6
+INC0408,2024-10-18,User Error,High,Operations,Closed,19
+INC0409,2024-08-31,Data Loss,Medium,Finance,In Progress,13
+INC0410,2025-01-12,Network Issue,Medium,Customer Service,In Progress,13
+INC0411,2023-12-29,Network Issue,Low,Operations,Open,1
+INC0412,2023-06-29,Data Loss,Low,Customer Service,Open,28
+INC0413,2024-08-20,Hardware Failure,Low,HR,In Progress,21
+INC0414,2023-01-14,Hardware Failure,High,Finance,Resolved,27
+INC0415,2022-08-09,Software Bug,Medium,Operations,Resolved,1
+INC0416,2023-07-20,Data Loss,Low,Customer Service,Resolved,25
+INC0417,2023-09-05,User Error,Low,Finance,In Progress,27
+INC0418,2024-02-04,User Error,Critical,Customer Service,Resolved,2
+INC0419,2023-03-24,Data Loss,Medium,Customer Service,Open,23
+INC0420,2023-06-29,Security Breach,High,Finance,Open,2
+INC0421,2022-06-01,Data Loss,Critical,IT,In Progress,19
+INC0422,2022-08-19,Network Issue,High,HR,Resolved,13
+INC0423,2024-02-23,Hardware Failure,Medium,Operations,In Progress,12
+INC0424,2024-10-20,User Error,Critical,Finance,In Progress,18
+INC0425,2024-12-01,Software Bug,Critical,IT,Closed,15
+INC0426,2024-11-17,Network Issue,High,Finance,Open,19
+INC0427,2023-05-24,Hardware Failure,High,Customer Service,Closed,21
+INC0428,2023-06-02,Security Breach,High,Sales,Open,17
+INC0429,2022-11-06,Hardware Failure,Medium,IT,Open,22
+INC0430,2022-11-04,Security Breach,Low,Sales,Open,14
+INC0431,2024-11-17,Software Bug,Critical,HR,Resolved,26
+INC0432,2023-08-14,Network Issue,Low,Sales,In Progress,6
+INC0433,2023-05-03,User Error,Critical,Sales,Open,26
+INC0434,2025-01-09,Security Breach,Low,IT,Closed,15
+INC0435,2024-05-31,Software Bug,High,IT,In Progress,25
+INC0436,2024-03-28,Software Bug,Critical,IT,Open,6
+INC0437,2023-08-10,Hardware Failure,Medium,Finance,In Progress,21
+INC0438,2025-04-09,Network Issue,Medium,Finance,In Progress,2
+INC0439,2022-10-24,User Error,High,Customer Service,Resolved,1
+INC0440,2022-11-10,Hardware Failure,Critical,Operations,In Progress,7
+INC0441,2025-01-02,Software Bug,Critical,Operations,Resolved,12
+INC0442,2022-10-20,Hardware Failure,High,Sales,Resolved,12
+INC0443,2022-11-30,Data Loss,Medium,IT,Resolved,22
+INC0444,2024-11-22,Network Issue,Critical,Customer Service,Open,15
+INC0445,2023-01-29,Data Loss,Medium,Customer Service,In Progress,1
+INC0446,2024-01-28,Hardware Failure,Low,HR,In Progress,11
+INC0447,2024-02-25,Security Breach,Critical,Finance,Closed,25
+INC0448,2022-06-08,Hardware Failure,Critical,Customer Service,Resolved,24
+INC0449,2024-09-26,User Error,High,Customer Service,Closed,18
+INC0450,2022-09-29,User Error,High,Sales,Open,2
+INC0451,2024-09-04,User Error,Critical,IT,Closed,6
+INC0452,2023-04-18,Security Breach,Low,Operations,In Progress,4
+INC0453,2023-11-22,Software Bug,High,Customer Service,Closed,1
+INC0454,2024-01-09,Network Issue,Low,Operations,Open,21
+INC0455,2023-03-08,Network Issue,Critical,IT,Closed,6
+INC0456,2024-03-23,Data Loss,Medium,Finance,Resolved,24
+INC0457,2024-12-29,Security Breach,Medium,Sales,Resolved,28
+INC0458,2023-09-20,Security Breach,Medium,Operations,Open,13
+INC0459,2024-08-24,Security Breach,Low,Customer Service,In Progress,13
+INC0460,2024-02-04,Network Issue,Medium,Sales,Resolved,22
+INC0461,2023-12-16,Data Loss,Medium,HR,In Progress,14
+INC0462,2023-12-07,Network Issue,Medium,IT,Closed,25
+INC0463,2023-11-03,Security Breach,Medium,IT,Closed,11
+INC0464,2022-11-19,Software Bug,Low,HR,Resolved,11
+INC0465,2023-03-05,Software Bug,High,Customer Service,In Progress,14
+INC0466,2024-08-16,Hardware Failure,Critical,Finance,Open,19
+INC0467,2023-08-10,Network Issue,Low,Finance,Resolved,17
+INC0468,2024-05-07,Software Bug,Medium,IT,Closed,16
+INC0469,2022-08-15,User Error,Medium,Finance,In Progress,16
+INC0470,2022-07-05,Data Loss,High,Sales,In Progress,20
+INC0471,2024-06-28,Software Bug,Low,Operations,Resolved,14
+INC0472,2023-11-16,Hardware Failure,High,IT,Closed,15
+INC0473,2023-01-11,User Error,Medium,Customer Service,In Progress,2
+INC0474,2022-08-14,Network Issue,Medium,IT,Resolved,21
+INC0475,2024-05-24,Software Bug,Critical,Sales,Closed,9
+INC0476,2022-12-12,User Error,Critical,HR,Open,17
+INC0477,2024-02-08,Security Breach,High,IT,In Progress,20
+INC0478,2023-10-07,Security Breach,Medium,HR,In Progress,5
+INC0479,2023-09-12,Software Bug,Medium,Finance,In Progress,5
+INC0480,2022-07-21,Network Issue,Medium,Finance,Closed,20
+INC0481,2022-07-06,Data Loss,Critical,IT,In Progress,5
+INC0482,2024-05-27,Security Breach,Low,HR,Resolved,24
+INC0483,2024-12-04,Data Loss,Low,Sales,Resolved,12
+INC0484,2022-12-17,Hardware Failure,Critical,Operations,Resolved,20
+INC0485,2024-12-20,Data Loss,Low,Customer Service,Resolved,15
+INC0486,2024-02-16,Data Loss,Medium,Finance,Open,10
+INC0487,2024-06-24,Hardware Failure,High,HR,Resolved,3
+INC0488,2023-09-16,Security Breach,Critical,Customer Service,In Progress,3
+INC0489,2025-03-13,Network Issue,Low,IT,Resolved,19
+INC0490,2024-09-03,Network Issue,Medium,IT,In Progress,22
+INC0491,2022-10-08,User Error,Medium,HR,Resolved,4
+INC0492,2025-03-09,User Error,Medium,Customer Service,Resolved,11
+INC0493,2022-11-18,Hardware Failure,Medium,Finance,Closed,11
+INC0494,2022-07-13,Security Breach,Medium,Customer Service,Resolved,1
+INC0495,2024-07-04,Security Breach,Low,HR,Open,7
+INC0496,2024-11-26,Software Bug,Medium,HR,Open,23
+INC0497,2025-03-03,User Error,High,Sales,In Progress,25
+INC0498,2024-11-21,Data Loss,Medium,IT,Resolved,13
+INC0499,2022-09-09,Hardware Failure,Critical,Sales,In Progress,3
+INC0500,2022-05-01,Hardware Failure,Critical,HR,In Progress,12
