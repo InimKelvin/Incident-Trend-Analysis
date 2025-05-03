@@ -61,7 +61,7 @@ The **Incident Trend Analysis** project involves conducting statistical analysis
 ## 🧠 **Key Insights**
 
 - **Top Departments Reporting Incidents**: Sales and HR are the most active departments in terms of incident reporting.
-- **Incident Type Frequency**: Software incidents are the most frequent, suggesting a need for enhanced software monitoring.
+- **Incident Type Frequency**: Security Breaches and Software incidents are the most frequent, suggesting a need for enhanced software monitoring.
 - **Incident Resolution Time**: High-priority incidents tend to take longer to resolve, highlighting the need for quicker resolution strategies.
 - **Impact of Incident Priority**: There is a strong correlation between priority levels and resolution times, with high-priority incidents requiring more time.
 
